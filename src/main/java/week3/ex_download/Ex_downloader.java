@@ -1,6 +1,7 @@
 package week3.ex_download;
 
 
+import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -15,15 +16,13 @@ import java.util.regex.Pattern;
 
 public class Ex_downloader {
 
-    public static String downAddress(String url) throws IOException {
+    private static final Logger LOGGER = Logger.getLogger(Ex_downloader.class);
 
+    public static String downAddress(String url) throws IOException {
+        LOGGER.info("Try download address");
         Document document = Jsoup.connect(url).get();
 
-        //Document doc = Jsoup.parse(document.outerHtml());
-
         Element link = document.select("a").first();
-
-
 
         String linkHref = link.attr("href");
 

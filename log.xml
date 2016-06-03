@@ -1,0 +1,24 @@
+<log4j:event logger="logging.TestLogging" timestamp="1464872131657" level="INFO" thread="main">
+<log4j:message><![CDATA[start action system]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="logging.TestLogging" timestamp="1464872577900" level="INFO" thread="main">
+<log4j:message><![CDATA[start action system]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="logging.TestLogging" timestamp="1464872643056" level="DEBUG" thread="main">
+<log4j:message><![CDATA[start action system]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="logging.TestLogging" timestamp="1464873489272" level="DEBUG" thread="main">
+<log4j:message><![CDATA[child2 debug]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="logging.TestLogging" timestamp="1464873641881" level="DEBUG" thread="main">
+<log4j:message><![CDATA[child2 debug]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="logging.TestLogging" timestamp="1464873708802" level="DEBUG" thread="main">
+<log4j:message><![CDATA[child2 debug]]></log4j:message>
+</log4j:event>
+

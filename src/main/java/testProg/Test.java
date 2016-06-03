@@ -1,4 +1,4 @@
-package test;
+package testProg;
 
 
 import strim.NetUtils;
