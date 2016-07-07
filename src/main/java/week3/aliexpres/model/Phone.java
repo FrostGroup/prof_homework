@@ -40,4 +40,13 @@ public class Phone {
     public void setPrise(String prise) {
         this.prise = prise;
     }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", prise='" + prise + '\'' +
+                '}';
+    }
 }

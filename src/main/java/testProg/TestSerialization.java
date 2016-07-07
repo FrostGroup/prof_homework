@@ -41,5 +41,4 @@ public class TestSerialization {
         Assert.assertEquals(robot, object);
     }
 
-
 }
