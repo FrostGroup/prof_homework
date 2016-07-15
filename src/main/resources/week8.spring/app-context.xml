@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean class="spring.ioc.model.MyUser" scope="prototype">
+        <constructor-arg name="email" value="ADMIN"/>
+        <constructor-arg name="pass" value="12345"/>
+    </bean>
+
+    <bean id="dbBean" class="spring.ioc.db.AppDb" scope="singleton"/>
+
+    <bean id="dao" class="spring.ioc.dao.GeneralDao">
+        <property name="db" ref="dbBean"/>
+    </bean>
+
+    <bean id="validator" class="spring.ioc.validation.GeneralValidator">
+
+    </bean>
+
+    <bean id="service" class="spring.ioc.service.MyService">
+        <property name="validator" ref="validator"/>
+        <property name="genDao" ref="dao"/>
+    </bean>
+
+
+
+
+</beans>

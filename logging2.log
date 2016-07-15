@@ -1,0 +1,315 @@
+2016-07-08 13:40:04 DEBUG logging:38 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2016-07-08 13:40:04 TRACE HibernatePersistenceProvider:49 - Starting createEntityManagerFactory for persistenceUnitName myunit
+2016-07-08 13:40:04 TRACE HibernatePersistenceProvider:75 - Attempting to obtain correct EntityManagerFactoryBuilder for persistenceUnitName : myunit
+2016-07-08 13:40:04 DEBUG ClassLoaderServiceImpl:124 - Incoming config yielded no classloaders; adding standard SE ones
+2016-07-08 13:40:04 TRACE PersistenceXmlParser:92 - Attempting to parse persistence.xml file : file:/D:/Development/GitHub/prof_homework/TestioProject/target/classes/META-INF/persistence.xml
+2016-07-08 13:40:04 TRACE ArchiveHelper:96 - JAR URL from URL Entry: file:/D:/Development/GitHub/prof_homework/TestioProject/target/classes/META-INF/persistence.xml >> file:/D:/Development/GitHub/prof_homework/TestioProject/target/classes/
+2016-07-08 13:40:04 TRACE PersistenceXmlParser:165 - Persistence unit name from persistence.xml : myunit
+2016-07-08 13:40:04 DEBUG HibernatePersistenceProvider:87 - Located and parsed 1 persistence units; checking each
+2016-07-08 13:40:04 DEBUG HibernatePersistenceProvider:95 - Checking persistence-unit [name=myunit, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [myunit]
+2016-07-08 13:40:04 DEBUG ProviderChecker:89 - Persistence-unit [myunit] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2016-07-08 13:40:04 TRACE ProviderChecker:55 - Checking requested PersistenceProvider name [org.hibernate.jpa.HibernatePersistenceProvider] against Hibernate provider names
+2016-07-08 13:40:04 DEBUG LogHelper:102 - PersistenceUnitInfo [
+	name: myunit
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/D:/Development/GitHub/prof_homework/TestioProject/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names [
+		ua.homework.testio.model.Student]
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.driver: com.mysql.jdbc.Driver
+		javax.persistence.jdbc.password: 
+		javax.persistence.jdbc.url: jdbc:mysql://localhost:3306/testio
+		hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+		hibernate.show_sql: true
+		hibernate.hbm2ddl.auto: update
+		javax.persistence.jdbc.user: root]
+2016-07-08 13:40:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2016-07-08 13:40:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2016-07-08 13:40:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2016-07-08 13:40:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.resource.transaction.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.resource.transaction.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [disallow] -> [org.hibernate.event.internal.EntityCopyNotAllowedObserver]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [allow] -> [org.hibernate.event.internal.EntityCopyAllowedObserver]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [log] -> [org.hibernate.event.internal.EntityCopyAllowedLoggedObserver]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+2016-07-08 13:40:04 TRACE StrategySelectorImpl:53 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+2016-07-08 13:40:05 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-07-08 13:40:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-07-08 13:40:05 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-07-08 13:40:05 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2016-07-08 13:40:05 DEBUG RegionFactoryInitiator:88 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2016-07-08 13:40:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@2e3fc542
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@2e3fc542
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2e3fc542
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1786f9d5
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6eceb130
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration yes_no -> org.hibernate.type.YesNoType@47db50c5
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@481a15ff
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@481a15ff
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@481a15ff
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration character -> org.hibernate.type.CharacterType@77846d2c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration char -> org.hibernate.type.CharacterType@77846d2c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@77846d2c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@24a35978
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@24a35978
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@24a35978
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration integer -> org.hibernate.type.IntegerType@27d415d9
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration int -> org.hibernate.type.IntegerType@27d415d9
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@27d415d9
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@2fd66ad3
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@2fd66ad3
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@2fd66ad3
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@6dde5c8c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@6dde5c8c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6dde5c8c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@35a50a4c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@35a50a4c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@35a50a4c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@16022d9d
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@16022d9d
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5a4041cc
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5a4041cc
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration string -> org.hibernate.type.StringType@4bb4de6a
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.String -> org.hibernate.type.StringType@4bb4de6a
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@aecb35a
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@382db087
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration url -> org.hibernate.type.UrlType@543e710e
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@543e710e
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration date -> org.hibernate.type.DateType@27fe3806
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@27fe3806
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration time -> org.hibernate.type.TimeType@5e57643e
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5e57643e
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration timestamp -> org.hibernate.type.TimestampType@50de0926
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@50de0926
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@50de0926
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@140e5a13
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration calendar -> org.hibernate.type.CalendarType@6c9f5c0d
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6c9f5c0d
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6c9f5c0d
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2bea5ab4
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration locale -> org.hibernate.type.LocaleType@f4168b8
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@f4168b8
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration currency -> org.hibernate.type.CurrencyType@130f889
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@130f889
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@40f08448
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@40f08448
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration class -> org.hibernate.type.ClassType@7181ae3f
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7181ae3f
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@517cd4b
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@517cd4b
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@679b62af
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration binary -> org.hibernate.type.BinaryType@49c43f4e
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration byte[] -> org.hibernate.type.BinaryType@49c43f4e
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration [B -> org.hibernate.type.BinaryType@49c43f4e
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2d127a61
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2d127a61
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2d127a61
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration image -> org.hibernate.type.ImageType@32a068d1
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration characters -> org.hibernate.type.CharArrayType@282003e1
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration char[] -> org.hibernate.type.CharArrayType@282003e1
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration [C -> org.hibernate.type.CharArrayType@282003e1
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4df828d7
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4df828d7
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4df828d7
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration text -> org.hibernate.type.TextType@31206beb
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration ntext -> org.hibernate.type.NTextType@120d6fe6
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration blob -> org.hibernate.type.BlobType@6e38921c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6e38921c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@49070868
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration clob -> org.hibernate.type.ClobType@ba8d91c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@ba8d91c
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration nclob -> org.hibernate.type.NClobType@58134517
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@58134517
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@351d0846
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@7fe8ea47
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration serializable -> org.hibernate.type.SerializableType@6b53e23f
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration object -> org.hibernate.type.ObjectType@6279cee3
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6279cee3
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@57175e74
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7bb58ca3
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@c540f5a
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@770c2e6b
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1a052a00
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4d826d77
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@61009542
+2016-07-08 13:40:05 DEBUG BasicTypeRegistry:135 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@77e9807f
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2016-07-08 13:40:05 TRACE AbstractServiceRegistryImpl:204 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2016-07-08 13:40:05 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-07-08 13:40:05 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2016-07-08 13:40:05 INFO  DriverManagerConnectionProviderImpl:134 - HHH000046: Connection properties: {user=root}
+2016-07-08 13:40:05 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-07-08 13:40:05 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2016-07-08 13:40:05 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-07-08 13:40:06 DEBUG HibernatePersistenceProvider:65 - Unable to build entity manager factory
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:244)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:208)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:189)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:217)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:770)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:797)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:78)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at ua.homework.testio.test.EntityManagerFactoryTest.main(EntityManagerFactoryTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.hibernate.exception.JDBCConnectionException: Error calling Driver#connect
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator$1$1.convert(BasicConnectionCreator.java:105)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:123)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)
+	at org.hibernate.engine.jdbc.connections.internal.PooledConnections.addConnections(PooledConnections.java:106)
+	at org.hibernate.engine.jdbc.connections.internal.PooledConnections.<init>(PooledConnections.java:40)
+	at org.hibernate.engine.jdbc.connections.internal.PooledConnections.<init>(PooledConnections.java:19)
+	at org.hibernate.engine.jdbc.connections.internal.PooledConnections$Builder.build(PooledConnections.java:138)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:75)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:217)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:189)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:234)
+	... 19 more
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1055)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38)
+	... 34 more
+2016-07-08 14:08:12 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit
+	...]
+2016-07-08 14:08:12 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-07-08 14:08:12 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-07-08 14:08:12 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-07-08 14:08:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-07-08 14:08:13 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-07-08 14:08:13 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2016-07-08 14:08:13 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root}
+2016-07-08 14:08:13 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-07-08 14:08:13 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-07-15 22:32:46 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1175e2db: startup date [Fri Jul 15 22:32:46 AST 2016]; root of context hierarchy
+2016-07-15 22:32:47 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-context.xml]
+2016-07-15 22:32:49 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [orm-spring-context.xml]
+2016-07-15 22:32:50 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2016-07-15 22:32:50 WARN  ClassPathXmlApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Around
