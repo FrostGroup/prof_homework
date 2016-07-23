@@ -17,6 +17,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>RestJerseyServer</module>
+    </modules>
 
 
     <modelVersion>4.0.0</modelVersion>
@@ -24,7 +27,7 @@
     <artifactId>prof_homework</artifactId>
     <version>1.0</version>
 
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
 <dependencies>
 
