@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<team id="1" shortName="SY">
+    <user id="1" shortName="SY">
+        <name>Sasha</name>
+        <birth>1989.12.10</birth>
+        <salary>3000</salary>
+        <address>
+            <city>Kiev</city>
+            <street>Entuziastov</street>
+            <houseNum>3</houseNum>
+        </address>
+    </user>
+    <user id="2">
+    <name>Sasha</name>
+    </user>
+</team>

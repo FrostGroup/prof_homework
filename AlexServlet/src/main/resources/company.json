@@ -1,0 +1,35 @@
+{
+  "team": {
+
+    "count": 10,
+    "users": [
+      {
+        "id": "1",
+        "name": "Sasha",
+        "address": {
+          "city": "Kiev",
+          "street": "Entuzeastov"
+        }
+      },
+      {
+        "id": "2",
+        "name": "Vasya",
+        "address": {
+          "city": "Kiev",
+          "street": "Davidova"
+        }
+      },
+      {
+        "id": "3",
+        "name": "Petya",
+        "address": {
+          "city": "Kiev",
+          "street": "Khreschatik"
+        }
+      }
+    ]
+
+  }
+
+
+}
