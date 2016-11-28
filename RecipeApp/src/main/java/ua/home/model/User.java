@@ -1,23 +1,34 @@
 package ua.home.model;
 
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Alex on 23.08.2016.
- */
+@Entity
+@Table(name = "users")
+@NamedQueries({@NamedQuery(name = "getAllUsers", query = "SELECT c FROM User c")})
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @Column(name = "user_name", nullable = false)
     private String name;
+    @Column
     private String login;
+    @Column(name = "user_pass", nullable = false)
     private String pass;
-    private List<Recipe> recipeList;
+    @ManyToMany
+    @JoinTable(name="user_recipes",
+            joinColumns = @JoinColumn(name="user_id", referencedColumnName="id"),
+            inverseJoinColumns = @JoinColumn(name="recipe_id", referencedColumnName="id"))
+    private List<Recipe> recipeList = new ArrayList<>();
 
     public User() {
     }
 
-    public User(int id, String pass, String login, String name) {
-        this.id = id;
+    public User(String pass, String login, String name) {
         this.pass = pass;
         this.login = login;
         this.name = name;
@@ -93,7 +104,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", login='" + login + '\'' +
                 ", pass=' ***** "  + '\'' +
-                ", recipeList=" + recipeList +
+                /*", recipeList=" + recipeList +*/
                 '}';
     }
 }

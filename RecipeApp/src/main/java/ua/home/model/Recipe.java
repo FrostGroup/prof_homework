@@ -1,28 +1,61 @@
 package ua.home.model;
 
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Alex on 23.08.2016.
- */
+
+@Entity
+@Table(name = "recipes")
+@NamedQueries({@NamedQuery(name = "getAllRecipes", query = "SELECT c FROM Recipe c")})
 public class Recipe {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+    @Column(name = "CONFORMITY")
+    private int conformity = 0;
+    @Column(name = "NAME")
     private String name;
-    private List<String> ingredients;
+    @Column(name = "INGREDIENTS")
+    private String ingredients;
+    @Column(name = "COOKING_METHOD")
     private String cookingMethod;
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "recipeList")
+    private List<User> userList = new ArrayList<>();
 
     public Recipe() {
     }
 
-    public Recipe(String name, String cookingMethod) {
-        this.name = name;
-        this.cookingMethod = cookingMethod;
-    }
-
-    public Recipe(String name, List<String> ingredients, String cookingMethod) {
+    public Recipe(String name, String ingredients, String cookingMethod) {
         this.name = name;
         this.ingredients = ingredients;
         this.cookingMethod = cookingMethod;
+    }
+
+
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(List<User> userList) {
+        this.userList = userList;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getConformity() {
+        return conformity;
+    }
+
+    public void setConformity(int conformity) {
+        this.conformity = conformity;
     }
 
     public String getName() {
@@ -33,11 +66,11 @@ public class Recipe {
         this.name = name;
     }
 
-    public List<String> getIngredients() {
+    public String getIngredients() {
         return ingredients;
     }
 
-    public void setIngredients(List<String> ingredients) {
+    public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
 
@@ -50,32 +83,30 @@ public class Recipe {
     }
 
     @Override
+    public String toString() {
+        return "Recipe{" +
+                "id=" + id +
+                ", conformity=" + conformity +
+                ", name='" + name + '\'' +
+                ", ingredients='" + ingredients + '\'' +
+                ", cookingMethod='" + cookingMethod + '\'' +
+                /*", userList=" + userList +*/
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
         Recipe recipe = (Recipe) o;
 
-        if (name != null ? !name.equals(recipe.name) : recipe.name != null) return false;
-        if (ingredients != null ? !ingredients.equals(recipe.ingredients) : recipe.ingredients != null) return false;
-        return cookingMethod != null ? cookingMethod.equals(recipe.cookingMethod) : recipe.cookingMethod == null;
+        return id == recipe.id;
 
     }
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (ingredients != null ? ingredients.hashCode() : 0);
-        result = 31 * result + (cookingMethod != null ? cookingMethod.hashCode() : 0);
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "Recipe{" +
-                "name='" + name + '\'' +
-                ", ingredients=" + ingredients +
-                ", cookingMethod='" + cookingMethod + '\'' +
-                '}';
+        return id;
     }
 }

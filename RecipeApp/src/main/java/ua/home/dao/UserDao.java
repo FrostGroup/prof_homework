@@ -14,9 +14,11 @@ public interface UserDao {
 
     User removeUser (User user);
 
-    List<User> usersList ();
+    List<User> getAllUsers ();
 
-    User findUser (Map<String, String> map);
+    User updateUser(User user);
+
+    User findUser (String login);
 
     User findUserById (int id);
 }

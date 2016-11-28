@@ -13,7 +13,7 @@ import javax.persistence.Persistence;
 public class TestRelations {
     public static void main(String[] args) {
         EntityManagerFactory entityManagerFactory =
-                Persistence.createEntityManagerFactory("myunit");
+                Persistence.createEntityManagerFactory("myunit2");
 
         EntityManager manager = entityManagerFactory.createEntityManager();
 

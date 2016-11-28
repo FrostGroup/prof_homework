@@ -20,11 +20,11 @@ package reflection;
             for (Field field : fields) {
                 try {
                     if(field.isAnnotationPresent(Save.class)){
-                        Save save = field.getDeclaredAnnotation(Save.class);
+                        //Save save = field.getDeclaredAnnotation(Save.class);
                         String fieldName = field.getName();
-                        String firstUpperCaseLetter = fieldName.substring(0, 1).toUpperCase();
-                        Method getFieldValue = struc.getMethod("get" + firstUpperCaseLetter + fieldName.substring(1));
-                        sb.append(String.format("%s:%s\n", save.name(), getFieldValue.invoke(obj)));
+                        String firstUpperCaseLetter = fieldName.substring(0, 1).toUpperCase()+ fieldName.substring(1);
+                        Method getFieldValue = struc.getMethod("get" + firstUpperCaseLetter );
+                        sb.append(String.format("%s:%s\n", fieldName, getFieldValue.invoke(obj)));
                     }
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
@@ -41,7 +41,7 @@ package reflection;
         public Object parse(String src){
 
             String[] lines = src.split("\n");
-            String type = lines[0].split(":")[1];
+            String type = lines[0].split(":")[1].split("[.]")[1];
 
             Map<String,String> keyValuesMap = new HashMap<>();
 

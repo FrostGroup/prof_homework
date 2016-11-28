@@ -606,3 +606,71 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2016-07-20 16:46:30 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2016-07-20 16:46:30 INFO  LobCreatorBuilderImpl:63 - HHH000422: Disabling contextual LOB creation as connection was null
 2016-07-20 16:46:31 WARN  ClassPathXmlApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [orm-spring-context.xml]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.persistence.JoinColumn.foreignKey()Ljavax/persistence/ForeignKey;
+2016-10-10 19:56:28 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit2
+	...]
+2016-10-10 19:56:28 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-10-10 19:56:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-10-10 19:56:28 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-10-10 19:56:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-10-10 19:56:28 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-10-10 19:56:28 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2016-10-10 19:56:28 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-10-10 19:56:28 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-10-10 19:56:28 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-10-10 19:57:37 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit2
+	...]
+2016-10-10 19:57:37 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-10-10 19:57:37 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-10-10 19:57:37 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-10-10 19:57:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-10-10 19:57:38 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-10-10 19:57:38 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2016-10-10 19:57:38 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-10-10 19:57:38 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-10-10 19:57:38 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-10-10 19:57:39 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-10-10 19:57:39 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-10-10 20:00:13 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit2
+	...]
+2016-10-10 20:00:13 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-10-10 20:00:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-10-10 20:00:13 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-10-10 20:00:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-10-10 20:00:14 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-10-10 20:00:14 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2016-10-10 20:00:14 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-10-10 20:00:14 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-10-10 20:00:14 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-10-10 20:00:15 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-10-10 20:00:15 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-10-10 20:01:37 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit2
+	...]
+2016-10-10 20:01:37 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-10-10 20:01:37 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-10-10 20:01:37 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-10-10 20:01:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-10-10 20:01:37 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-10-10 20:01:37 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2016-10-10 20:01:37 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-10-10 20:01:37 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-10-10 20:01:37 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-10-10 20:01:39 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-10-10 20:01:39 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-10-10 20:04:01 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit2
+	...]
+2016-10-10 20:04:01 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-10-10 20:04:01 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-10-10 20:04:01 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-10-10 20:04:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-10-10 20:04:02 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-10-10 20:04:02 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2016-10-10 20:04:02 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-10-10 20:04:02 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-10-10 20:04:02 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-10-10 20:04:03 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-10-10 20:04:03 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4

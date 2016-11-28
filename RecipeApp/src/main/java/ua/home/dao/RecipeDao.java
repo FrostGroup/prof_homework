@@ -10,10 +10,16 @@ import java.util.List;
  */
 public interface RecipeDao {
 
-    List<Recipe> showRecipeList();
+    List<Recipe> getAllRecipeList();
 
     Recipe findRecipeByName(String name);
 
-    Recipe findRecipeByIngredients(List<String> ingredients);
+    List<Recipe> findRecipeByIngredients(String ingredients);
+    
+    Recipe addRecipe(Recipe recipe);
+    
+    Recipe removeRecipe(Recipe recipe);
 
+    Recipe updateRecipe(Recipe recipeUp);
+    
 }

@@ -21,7 +21,7 @@ public class TestSerialization {
     public static void beforeClass() {
         robot = new Robot(1, "DDRW2", 10000);
 
-        robotStr = String.format("type:%s\nID:%s\nMODEL:%s\nPRICE:%s\n",
+        robotStr = String.format("type:%s\nid:%s\nmodel:%s\nprice:%s\n",
                 robot.getClass().getName(),
                 robot.getId(),
                 robot.getModel(),
